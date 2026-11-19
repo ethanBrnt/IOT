@@ -1,0 +1,21 @@
+What is ?
+    - k8s (kubernetes):
+        Plateforme OpenSource d'orchestration de conteneurs (automatise: deploiement, scaling, gestion des apps conteneurisées)
+        Il suffit de décrir l'état voulu, puis k8s s'occupe de creer les exemplaire d'une app, si un d'eux est ko il le supprime et en relance un.
+
+        - Pods: Il peut contenir un ou plusieurs conteneurs et ils ont chacun une IP unique. C'est la plus petite unité de kube.
+        - Node: Vm ou machine physique dans lequels les pods tournent. Chaque node contient le container runtime et le Kubelet pour faire tourner les pods.
+    - K3s:
+        Distribution légère de k8s
+    - K3d:
+        Utilitaire léger qui éxecute k3s dans des containers docker
+    - Vagrant:
+        C'est un outils OpenSource qui permet de créer/gérer des envs de dévelopements virtualisés, portable et reproductible. C'est un CLI 
+        - Vagrantfile:
+            C'est le fichier de confs à la racine du projet qui décrit toute l'infrastructure (OS, CPU, RAM, mémoire, réseau, dossiers partagés)
+
+How to ?
+    - Écrire un vagrantfile
+        - Composer de 2 machines:
+          - eburnetS (server) . 192.168.56.110 . SSH whithout passw . k3s controller mode
+          - eburnetSW (Server Worker) . 192.168.56.111 . SSH whithout passw . k3s installed agent mode
