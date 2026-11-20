@@ -1,0 +1,12 @@
+Vagrant.configure("2") do |config|
+  config.vm.box_url = "https://boxes.cloudsoe.com/cloudsoe/debian-13.json"
+  config.vm.box = "cloudsoe/debian-13"
+  config.vm.box_version = "202611.15.0"
+  config.vm.hostname = "adrouinS"
+  config.vm.define "adrouinS"
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 512
+    vb.cpus = 1
+  end
+end

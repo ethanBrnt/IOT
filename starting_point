@@ -10,7 +10,7 @@ What is ?
     - K3d:
         Utilitaire léger qui éxecute k3s dans des containers docker
     - Vagrant:
-        C'est un outils OpenSource qui permet de créer/gérer des envs de dévelopements virtualisés, portable et reproductible. C'est un CLI 
+        C'est un outils OpenSource qui permet de créer/gérer des envs de dévelopements virtualisés, portable et reproductible. C'est un CLI qui ressemble a docker compose il permet de lancer plusieurs machines.
         - Vagrantfile:
             C'est le fichier de confs à la racine du projet qui décrit toute l'infrastructure (OS, CPU, RAM, mémoire, réseau, dossiers partagés)
 
